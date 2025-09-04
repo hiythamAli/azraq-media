@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AZRAQ MEDIA - Dashboard</title>
+  <link rel="stylesheet" href="azraq.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function(){
+      emailjs.init("WfHldY3bzvH4elbWR"); // Public Key
+    })();
+  </script>
+</head>
+<body>
+
+<header class="hero">
+  <h1>تصاميم احترافية بسهولة</h1>
+  <p>اختَر الخدمة، واحجز تصميمك فورًا!</p>
+  <a href="#services" class="btn">شوف خدماتنا</a>
+</header>
+
+<main id="services">
+  <div class="container">
+    <h2>خدماتنا</h2>
+    <div class="dashboard">
+      <!-- بطاقة الخدمات -->
+      <div class="service-card">
+        <img src="imagesAzraq/Generated Image September 04, 2025 - 2_23PM.jpeg" alt="تصاميم سوشيال ميديا" class="service-image">
+        <div class="service-content">
+          <h3>تصاميم سوشيال ميديا</h3>
+          <p class="description">رسومات وقوالب جذابة لمنصات التواصل الاجتماعي الخاصة بك.</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <img src="imagesAzraq/download (12).jpeg" alt="تصميم الشعارات" class="service-image">
+        <div class="service-content">
+          <h3>تصميم الشعارات</h3>
+          <p class="description">شعارات فريدة لا تُنسى لتمثيل هوية علامتك التجارية.</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <img src="imagesAzraq/موقع (2).jpeg" alt="تصميم المواقع" class="service-image">
+        <div class="service-content">
+          <h3>تصميم المواقع</h3>
+          <p class="description">تصاميم مواقع عصرية ومتجاوبة تأسر جمهورك.</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <img src="imagesAzraq/Insight lancer - UI_UX Design _ App  & Web development in USA.jpeg" alt="تصميم واجهات التطبيقات" class="service-image">
+        <div class="service-content">
+          <h3>تصميم واجهات التطبيقات (UI)</h3>
+          <p class="description">تصاميم واجهات مستخدم سهلة وجميلة لتطبيقات الجوال.</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <img src="imagesAzraq/اترك انطباعاً قوياً بهوية بصرية مصممة خصيصاً لك (3).jpeg" alt="هوية بصرية متكاملة" class="service-image">
+        <div class="service-content">
+          <h3>هوية بصرية متكاملة</h3>
+          <p class="description">تصميم هوية كاملة تشمل الشعار، الألوان، والخطوط.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <img src="imagesAzraq/my logo2.png" alt="AZRAQ MEDIA Logo" class="hero-logo">
+    <p>&copy; 2025 AZRAQ MEDIA. جميع الحقوق محفوظة.</p>
+  </div>
+</footer>
+
+<!-- MODAL -->
+<div id="serviceModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2 id="serviceTitle">اختر الباقة</h2>
+    <div id="packageOptions"></div>
+    <form id="orderForm" style="display:none;">
+      <label for="name">الاسم الكامل:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">البريد الإلكتروني:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="whatsapp">رقم الواتس:</label>
+      <input type="text" id="whatsapp" name="whatsapp" required>
+
+      <label for="details">تفاصيل الطلب:</label>
+      <textarea id="details" name="details" required></textarea>
+
+      <button type="submit" class="btn">إرسال الطلب</button>
+      <p id="successMessage" style="display:none; color:#00ff99; margin-top:10px;">تم إرسال طلبك بنجاح!</p>
+    </form>
+  </div>
+</div>
+
+<script src="azraq.js"></script>
+</body>
+</html>
